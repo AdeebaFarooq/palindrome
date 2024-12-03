@@ -36,7 +36,7 @@ app.get('/', (req, res) => {
         <h1>Palindrome Checker</h1>
         <p>Enter a text to check if it is a palindrome:</p>
         <form action="/checkPalindrome" method="get">
-            <input type="text" name="text" placeholder="Enter text" required>
+             <input type="text" name="text" placeholder="Enter text" required>
             <button type="submit">Check</button>
         </form>
     `);
@@ -44,5 +44,5 @@ app.get('/', (req, res) => {
 
 // Start the server on port 3111
 app.listen(port, () => {
-    console.log(Palindrome checker app listening at http://localhost:${port});
+    console.log(`Palindrome checker app listening at http://localhost:${port}`);
 });
